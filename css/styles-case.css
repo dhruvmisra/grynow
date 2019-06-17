@@ -1,0 +1,74 @@
+/* Jumbotron */
+.jumbotron {
+    background-image: url('../assets/case-studies.png');
+}
+
+
+/* Case study */
+.study-img {
+    height: 500px;
+    border: 1px solid rgb(172, 172, 172);
+    background: #fcfeff;
+    border-radius: 10px;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+.study-text {
+    position: absolute;
+    width: 40%;
+    right: 50px;
+    border-radius: 7px;
+    top: 10%;
+    box-shadow: 3px 3px 8px rgb(206, 206, 206);
+}
+.stat {
+    width: 100px;
+    height: 100px;
+}
+
+
+.alternate {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% calc(100% - 5vw), 0 100%);
+    margin-top: calc(0% - 5vw);
+}
+
+.alternate > .card-body > .card > .card-body > .row > .study-img {
+    margin-left: auto;
+}
+.alternate > .card-body > .card > .card-body > .row > .study-text {
+    right: 0;
+    left: 100px;
+}
+
+.social-row {
+    padding-top: 20px;
+}
+
+@media (max-width: 1024px) {
+    .study-img {
+        height: 300px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .study-text {
+        position: relative;
+        width: 100%;
+        margin-left: 0;
+        margin-top: -30px;
+        right: 0;
+        padding: 20px;
+    }
+    .stat {
+        width: 50px;
+        height: 50px;
+    }
+
+    .alternate > .card-body > .card > .card-body > .row > .study-text {
+        left: 0;
+    }
+    .study-heading {
+        
+    }
+}

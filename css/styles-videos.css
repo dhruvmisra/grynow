@@ -1,0 +1,48 @@
+.jumbotron {
+    background-image: url('../assets/videos.jpg');
+    background-position: center;
+}
+
+#videos {
+    width: 100vw;
+    background-color: #343E4A;
+    padding: 50px;
+}
+
+.video {
+    width: 400px;
+    height: 280px;
+    margin: 15px;
+}
+.video:hover {
+    cursor: pointer;
+}
+.video:hover > .thumbnail {
+    width: calc(100% - 20px);
+    height: calc(100% - 70px);
+    margin-top: 10px;
+}
+.video:hover > .info > h5 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+h5 {
+    transition: all 0.1s ease-out;
+}
+
+.thumbnail {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 60px);
+    transition: all 0.1s ease-out;
+}
+.info {
+    padding: 15px;
+    transition: all 0.1s ease-out;
+}
+.yt {
+    width: 20px;
+    height: 20px;
+}
