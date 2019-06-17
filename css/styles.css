@@ -49,6 +49,17 @@ h1, h2, h4, .list-title {
     color: red;
 }
 
+/* Jumbotron */
+.jumbotron {
+    padding-bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.jumbo-text {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 80px;
+}
 
 /* Join Now */
 .join-now {
@@ -68,18 +79,6 @@ h1, h2, h4, .list-title {
     color: rgb(60, 60, 60);
     font-size: 1.5em;
     font-weight: 600;
-}
-
-/* Jumbotron */
-.jumbotron {
-    padding-bottom: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.jumbo-text {
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 80px;
 }
 
 /* Footer */
@@ -150,9 +149,14 @@ h1, h2, h4, .list-title {
         position: relative;
     }
     .navbar-collapse {
-        margin-left: 60px;
+        margin-left: 50px;
         font-size: 1.1em;
     }
+    
+    .jumbo-text {
+        padding: 10px;
+    }
+    
 
     .card-title {
         margin: 10px 0px;

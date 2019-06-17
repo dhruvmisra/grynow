@@ -3,7 +3,6 @@
     background-image: url('../assets/case-studies.png');
 }
 
-
 /* Case study */
 .study-img {
     height: 500px;
@@ -47,6 +46,12 @@
 }
 
 @media (max-width: 1024px) {
+    .navbar {
+        background-color: black;
+    }
+    .jumbotron {
+        background-position: right -10em;
+    }
     .study-img {
         height: 300px;
         margin-left: 0;
