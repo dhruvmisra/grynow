@@ -1,11 +1,9 @@
 /* Jumbotron */
-.jumbo-contact {
-    height: fit-content;
+.jumbotron {
     padding: 0;
     border-radius: 0;
-    background-image: url('../contact.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('../assets/contact.jpg');
+    background-position: bottom;
 }
 .leading {
     padding-top: 100px;
@@ -25,7 +23,7 @@ form {
 @media (max-width: 1024px) {
     .navbar {
         background-color: black;
-    }
+    }    
     .jumbo-contact {
         height: 30%;
     }
