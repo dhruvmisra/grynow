@@ -1,6 +1,6 @@
 /* Jumbotron */
 .jumbotron {
-    background-image: url('../assets/case-studies.png');
+    background-image: url('../assets/case-studies.jpg');
 }
 
 /* Case study */
@@ -72,8 +72,5 @@
 
     .alternate > .card-body > .card > .card-body > .row > .study-text {
         left: 0;
-    }
-    .study-heading {
-        
     }
 }

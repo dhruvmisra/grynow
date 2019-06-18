@@ -153,10 +153,13 @@ h1, h2, h4, .list-title {
         font-size: 1.1em;
     }
     
-    .jumbo-text {
-        padding: 10px;
+    .jumbotron {
+        padding: 0;
     }
-    
+    .jumbo-text {
+        padding: 20px;
+        width: 80%;
+    }
 
     .card-title {
         margin: 10px 0px;

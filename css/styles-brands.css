@@ -1,3 +1,73 @@
+.steps-img {
+    position: relative;
+    order: 2;
+    height: 400px;
+    width: 400px;
+    margin-top: 50px !important;
+    margin-bottom: 80px !important; 
+    /* border: 1px solid rgb(224, 224, 224); */
+    background-color: rgb(246, 251, 255);
+    box-shadow: 1px 1px 3px rgb(214, 214, 214);
+}
+.sec-img {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    /* border: 1px solid rgb(224, 224, 224); */
+    background-color: rgb(193, 226, 255);
+    opacity: 0.3;
+    transition: all 0.2s ease-out;
+}
+
+.sec-img:nth-child(2) {
+    left: 125px;
+    top: -70px;
+}
+.sec-img:nth-child(3) {
+    left: 320px;
+    top: 100px;
+}
+.sec-img:nth-child(4) {
+    left: 250px;
+    top: 300px;
+}
+.sec-img:nth-child(5) {
+    left: 10px;
+    top: 300px;
+}
+.sec-img:nth-child(6) {
+    left: -60px;
+    top: 100px;
+}
+
+.sec-img.collapse {
+    display: block;
+    height: 140px;
+    opacity: 0.3;
+    transform: scale(1);
+}
+.sec-img.collapse.show {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+.accordion {
+    order: 1;
+    padding: 50px;
+    padding-left: 80px;
+}
+.accordion > .card {
+    border: none;
+}
+.accordion > .card > .card-header {
+    background: white;
+}
+.btn-link {
+    color: rgb(29, 29, 29);
+    text-decoration: none !important;
+}
+
 .info-card {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -61,6 +131,13 @@
 }
 
 @media (max-width: 1024px) {
+    .steps-img {
+        order: 1;
+    }
+    .accordion {
+        order: 2;
+        padding: 20px;
+    }
     .brand-small {
         right: 5px;
     }
