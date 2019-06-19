@@ -47,6 +47,39 @@ h5 {
     height: 20px;
 }
 
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 5px;
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+}
+#creator-img {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    display: block;
+}
+#creator-info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
 @media (max-width: 1024px) {
     .navbar {
         background-color: black;

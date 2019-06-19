@@ -152,25 +152,6 @@ creatorsData[23] = {
 }
 
 
-//Youtube Data API
-// const Http = new XMLHttpRequest();
-// const baseUrl='https://www.googleapis.com/youtube/v3/videos?part=statistics&id=';
-// const apiKey = 'AIzaSyDJuSGSwGBHIW3KMSLWG_RJ6emvFbtYWRc';
-
-// let id = creatorsData[0].videoId;
-// let url = baseUrl + id + '&key=' + apiKey;
-// Http.open("GET", url);
-// Http.send();
-
-// Http.onreadystatechange = () => {
-//     if(Http.readyState == 4 && Http.status == 200) {
-//         let res = JSON.parse(Http.responseText);
-//         console.log(res.items[0].statistics);
-//     }
-// }
-
-
-
 let creatorMain = document.getElementById('creator-main');
 let creators = document.getElementsByClassName('creator-secondary');
 let windowHeight;
@@ -339,32 +320,3 @@ window.onclick = function(event) {
         player.stopVideo();
     }
 }
-
-i = 0;
-let videos = document.getElementById('videos');
-function increaseSize() {
-    console.log(videos);
-
-    for(let j=0; j < 6; j++) {
-        let video = document.createElement('div');
-        video.classList.add('video');
-    
-        let iframe = document.createElement('iframe');
-        iframe.width = 100 + '%';
-        iframe.height = 100 + '%';
-        // iframe.id = 'player';
-        iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
-        iframe.setAttribute('allowfullscreen', '');
-        iframe.src = 'https://www.youtube.com/embed/' + creatorsData[i++].videoId + '?enablejsapi=1';
-    
-        video.appendChild(iframe);
-        videos.appendChild(video);
-    }
-}
-
-// for(let i=0; i < videos.children.length; i++) {
-//     videos.children[i].addEventListener('click', showModal);
-// }
-
-
-

@@ -2,6 +2,7 @@ let i = 0, n = 24;
 let creatorInterval;
 
 // Creators' Data
+let creatorPath = './assets/creators/';
 let creatorsData = [];
 creatorsData[0] = {
     name: 'Name1',
@@ -161,20 +162,20 @@ const baseUrl='https://www.googleapis.com/youtube/v3/videos?part=statistics&id='
 const apiKey = 'AIzaSyDJuSGSwGBHIW3KMSLWG_RJ6emvFbtYWRc';
 let views;
 
-Array.prototype.forEach.call(videos.children, async (video) => {
-    video.getElementsByClassName('thumbnail')[0].src = creatorsData[i].thumbnail;
-    video.getElementsByClassName('info')[0].getElementsByClassName('name')[0].innerHTML = creatorsData[i].name;
+// Array.prototype.forEach.call(videos.children, async (video) => {
+//     video.getElementsByClassName('thumbnail')[0].src = creatorsData[i].thumbnail;
+//     video.getElementsByClassName('info')[0].getElementsByClassName('name')[0].innerHTML = creatorsData[i].name;
 
-    await fetch(baseUrl + creatorsData[i++].videoId + '&key=' + apiKey)
-        .then(data => {
-            return data.json();
-        })
-        .then(res => {
-            views = res.items[0].statistics.viewCount;
-            console.log(views);
-            video.getElementsByClassName('info')[0].getElementsByClassName('stats')[0].getElementsByClassName('views')[0].innerHTML = views;
-        });
-});
+//     await fetch(baseUrl + creatorsData[i++].videoId + '&key=' + apiKey)
+//         .then(data => {
+//             return data.json();
+//         })
+//         .then(res => {
+//             views = res.items[0].statistics.viewCount;
+//             console.log(views);
+//             video.getElementsByClassName('info')[0].getElementsByClassName('stats')[0].getElementsByClassName('views')[0].innerHTML = views;
+//         });
+// });
 
 let seeMore = async () => {
     console.log('seeMore')
@@ -196,7 +197,20 @@ let seeMore = async () => {
         viewsIcon.classList.add('fas', 'fa-eye');
         views.classList.add('views');
 
-        name.innerHTML = creatorsData[i++].name;
+        name.innerHTML = creatorsData[i].name;
+
+        stats.appendChild(viewsIcon);
+        stats.appendChild(views);
+
+        info.appendChild(name);
+        info.appendChild(stats);
+
+        video.appendChild(img);
+        video.appendChild(info);
+
+        video.setAttribute('alt', i++);
+        
+        videos.appendChild(video);
 
         await fetch(baseUrl + creatorsData[i].videoId + '&key=' + apiKey)
         .then(data => {
@@ -204,20 +218,63 @@ let seeMore = async () => {
         })
         .then(res => {
             views.innerHTML = res.items[0].statistics.viewCount;
-            stats.appendChild(viewsIcon);
-            stats.appendChild(views);
-    
-            info.appendChild(name);
-            info.appendChild(stats);
-    
-            video.appendChild(img);
-            video.appendChild(info);
-            
-            videos.appendChild(video);
+
         });
 
     }
+    addListeners();
 }
+seeMore();
 
 let button = document.getElementById('see-more');
 button.addEventListener('click', seeMore);
+
+
+// Youtube Iframe API
+let tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+let firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+let player;
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+        height: '360',
+        width: '640'
+    });
+}
+
+//Modal
+let modal = document.getElementById("creatorModal");
+function showModal() {
+    console.log('modal');
+    let current = event.currentTarget;
+    let id = current.getAttribute('alt');
+    let name = document.getElementById('creator-name');
+    let img = document.getElementById('creator-img');
+    let info = document.getElementById('creator-info');
+    let iframe= player.getIframe();
+
+    name.innerHTML = creatorsData[id].name;
+    img.src = creatorPath + creatorsData[id].img;
+    info.innerHTML = creatorsData[id].info;
+    iframe.src = 'https://www.youtube.com/embed/' + creatorsData[id].videoId + '?enablejsapi=1';
+    
+    modal.style.display = "block";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        player.stopVideo();
+    }
+}
+
+function addListeners() {
+    let shownVideos = document.getElementsByClassName('video');
+    Array.prototype.forEach.call(shownVideos, (e) => {
+        //console.log(e);
+        e.addEventListener('click', showModal);
+    })
+}
+

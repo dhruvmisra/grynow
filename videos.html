@@ -67,7 +67,7 @@
     <div id="videos">
         <div class="row justify-content-center" style="color: grey">
             
-            <div class="card video">
+            <!-- <div class="card video">
                 <img src="https://i.ytimg.com/vi//mqdefault.jpg" alt="" class="thumbnail">
                 <div class="info">
                     <h5 class="d-inline name">Name</h5>
@@ -131,12 +131,34 @@
                         <span class="views">190381</span>
                     </div>
                 </div>
-            </div>
+            </div> -->
                         
                         
         </div>
         <div class="row mt-5">
             <button id="see-more" class="btn btn-primary rounded-pill mx-auto">See More</button>
+        </div>
+	</div>
+	
+	<!-- Modal -->
+	<div id="creatorModal" class="modal">
+        <div class="modal-content px-0">
+            <div class="row mx-2">
+                <div class="col-md-12 col-lg-4 mx-auto">
+                    <img id="creator-img" class="rounded-circle mx-auto"></img>
+                    <h5 id="creator-name" class="text-center font-weight-bold my-3">Name</h5>
+                    <div id="creator-info" class="text-center">Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+                <iframe width="640" 
+                        height="360"
+                        src="https://www.youtube.com/embed/?enablejsapi=1"
+                        id="player"
+                        class="ml-auto"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 
