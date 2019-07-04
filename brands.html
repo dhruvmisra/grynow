@@ -24,7 +24,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="./" style="padding-top: 0">
         <img src="./assets/logo_with_title.png" alt="GryNow logo" class="brand-icon">
@@ -41,7 +41,7 @@
           <a class="nav-item nav-link" href="./case-studies.html">Case Studies</a>
           <a class="nav-item nav-link" href="./about-us.html">About Us</a>
         </div>
-        <a class="btn btn-outline-primary rounded-pill ml-auto" href="./contact.html" role="button">Sign Up</a>
+        <a class="btn btn-primary rounded-pill ml-auto" href="./contact.html" role="button">Sign Up</a>
       </div>
     </div>
   </nav>
@@ -53,9 +53,8 @@
       <div class="row">
 
         <div class="jumbo-text col-md-12 col-lg-6" style="margin-top: 100px">
-          <h1 class="display-4">Engaging consumers has never been easier</h1>
-          <p>Consumers’ most trusted sources have become creators, not traditional
-            celebrities or brands.</p>
+          <h1 class="display-4">Influencing audience has never been easier</h1>
+          <p>Connect with your prospects at a lightning fast speed through our platform and boost sales.</p>
         </div>
 
       </div>
@@ -67,30 +66,38 @@
     <h2 class="card-title text-center py-4">Steps</h2>
 
     <div class="row">
-      <div class="steps-img mx-auto my-auto">
-        <img src="" alt="" class="main-img w-100 h-100">
-        <img src="" alt="" class="sec-img collapseOne collapse show rounded-circle" aria-labelledby="headingOne" data-parent="#steps">
-        <img src="" alt="" class="sec-img collapseTwo collapse rounded-circle" aria-labelledby="headingTwo" data-parent="#steps">
-        <img src="" alt="" class="sec-img collapseThree collapse rounded-circle" aria-labelledby="headingThree" data-parent="#steps">
-        <img src="" alt="" class="sec-img collapseFour collapse rounded-circle" aria-labelledby="headingFour" data-parent="#steps">
-        <img src="" alt="" class="sec-img collapseFive collapse rounded-circle" aria-labelledby="headingFive" data-parent="#steps">
+      <div class="steps-img">
+        <img src="./assets/steps/step-main.jpg" alt=""class="main-img w-100 h-100">
+        <div id="one" class="sec-img collapse show rounded-circle">
+          <img src="./assets/steps/step-form.png" alt="" class="w-100 h-100">
+        </div>
+        <div id="two" class="sec-img collapse rounded-circle">
+          <img src="./assets/steps/step-research.png" alt="" class="w-100 h-100">
+        </div>
+        <div id="three" class="sec-img collapse rounded-circle">
+          <img src="./assets/steps/step-shortlisting.png" alt="" class="w-100 h-100">
+        </div>
+        <div id="four" class="sec-img collapse rounded-circle">
+          <img src="./assets/steps/step-strategy.png" alt="" class="w-100 h-100">
+        </div>
+        <div id="five" class="sec-img collapse rounded-circle">
+          <img src="./assets/steps/step-results.png" alt="" class="w-100 h-100">
+        </div>
       </div>
   
       <div class="accordion col-xs-12 col-lg-6" id="steps">
         <div class="card">
           <div class="card-header" id="headingOne">
             <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".collapseOne"
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
                 aria-expanded="true" aria-controls="collapseOne">
-                Step #1
+                Fill the Form
               </button>
             </h2>
           </div>
-          <div class="collapseOne collapse show" aria-labelledby="headingOne" data-parent="#steps">
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#steps">
             <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-              richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-              brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+              Start by filling the form. Our team will get in touch with you.
             </div>
           </div>
         </div>
@@ -98,17 +105,15 @@
         <div class="card">
           <div class="card-header" id="headingTwo">
             <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target=".collapseTwo"
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
                 aria-expanded="false" aria-controls="collapseTwo">
-                Step #2
+                Research
               </button>
             </h2>
           </div>
-          <div class="collapseTwo collapse" aria-labelledby="headingTwo" data-parent="#steps">
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#steps">
             <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-              richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-              brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.        
+              Our team will do the research according to your requirements  
             </div>
           </div>
         </div>
@@ -116,17 +121,15 @@
         <div class="card">
           <div class="card-header" id="headingThree">
             <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target=".collapseThree"
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
                 aria-expanded="false" aria-controls="collapseThree">
-                Step #3
+                Influencer Shortlisting
               </button>
             </h2>
           </div>
-          <div class="collapseThree collapse" aria-labelledby="headingThree" data-parent="#steps">
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#steps">
             <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                We'll share the list of influencers for you to choose from.
             </div>
           </div>
         </div>
@@ -134,17 +137,16 @@
         <div class="card">
           <div class="card-header" id="headingFour">
             <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target=".collapseFour"
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
                 aria-expanded="false" aria-controls="collapseFour">
-                Step #4
+                Content Strategising
               </button>
             </h2>
           </div>
-          <div class="collapseFour collapse" aria-labelledby="headingFour" data-parent="#steps">
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#steps">
             <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                Our team will desgin the promotional content to be integrated in creator's video to 
+                maximise the result and maintain brand-value.
             </div>
           </div>
         </div>
@@ -152,17 +154,16 @@
         <div class="card">
           <div class="card-header" id="headingFive">
             <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target=".collapseFive"
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive"
                 aria-expanded="false" aria-controls="collapseFive">
-                Step #5
+                Results
               </button>
             </h2>
           </div>
-          <div class="collapseFive collapse" aria-labelledby="headingFive" data-parent="#steps">
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#steps">
             <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                The creator will publish and share the content with their loyal
+                followers, driving views, engagement and ROI after your approval.
             </div>
           </div>
         </div>
@@ -209,9 +210,9 @@
   </div>
 
   <!-- In focus videos -->
-  <div class="focus-videos card border-0 bg-dark">
+  <div class="focus-videos card border-0 bg-dark" style="z-index: 2">
     <div class="card-body container">
-      <h2 class="card-title text-center text-white">In focus</h2>
+      <h2 class="card-title text-center text-white">Latest Promotions</h2>
       <div class="slick">
         <div class="card video"></div>
         <div class="card video"></div>

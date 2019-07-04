@@ -1,54 +1,67 @@
+.jumbotron {
+    background-image: url('../assets/brands1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.row {
+    width: 100%;
+}
+
 .steps-img {
     position: relative;
     order: 2;
-    height: 400px;
-    width: 400px;
+    height: 28%;
+    width: 28%;
+    margin-left: 15%;
     margin-top: 50px !important;
     margin-bottom: 80px !important; 
-    /* border: 1px solid rgb(224, 224, 224); */
     background-color: rgb(246, 251, 255);
-    box-shadow: 1px 1px 3px rgb(214, 214, 214);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
 }
 .sec-img {
     position: absolute;
-    width: 140px;
-    height: 140px;
-    /* border: 1px solid rgb(224, 224, 224); */
-    background-color: rgb(193, 226, 255);
+    width: 35%;
+    height: 35%;
+    padding: 5%;
+    background-color: white;
     opacity: 0.3;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
     transition: all 0.2s ease-out;
 }
 
 .sec-img:nth-child(2) {
-    left: 125px;
-    top: -70px;
+    left: -30%;
+    top: -10%;
 }
 .sec-img:nth-child(3) {
-    left: 320px;
-    top: 100px;
+    left: -10%;
+    top: 22%;
 }
 .sec-img:nth-child(4) {
-    left: 250px;
-    top: 300px;
+    left: 85%;
+    top: 40%;
 }
 .sec-img:nth-child(5) {
-    left: 10px;
-    top: 300px;
+    left: 65%;
+    top: 70%;
 }
 .sec-img:nth-child(6) {
-    left: -60px;
-    top: 100px;
+    left: -20%;
+    top: 80%;
 }
 
 .sec-img.collapse {
     display: block;
-    height: 140px;
     opacity: 0.3;
     transform: scale(1);
+}
+.sec-img.collapse:hover {
+    opacity: 0.9;
 }
 .sec-img.collapse.show {
     opacity: 1;
     transform: scale(1.1);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -124,7 +137,7 @@
     margin-top: -20px;
     margin-bottom: 0;
     box-shadow: 0 0 0 black;
-    z-index: -1;
+    z-index: 1;
 }
 .social-row {
     padding-top: 50px;
@@ -133,6 +146,9 @@
 @media (max-width: 1024px) {
     .steps-img {
         order: 1;
+        width: 60%;
+        height: 60%;
+        margin-left: 25%;
     }
     .accordion {
         order: 2;
