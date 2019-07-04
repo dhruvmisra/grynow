@@ -45,6 +45,23 @@
     border-radius: 50%;
     background-color: #E60031;
 }
+.creator {
+    position: relative;
+    right: 20%;
+}
+.creator-in {
+    animation: creator-in 0.8s ease-out;
+}
+@keyframes creator-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-5em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 /* Features */
 .features {
@@ -98,7 +115,7 @@
 .client > img {
     filter: grayscale(100%);
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 0.5;
     transition: transform 100ms ease-out, filter 100ms ease-out;
 }
 .client > img:hover {
@@ -116,6 +133,7 @@
     overflow: hidden;
     margin: 10px 0;
     border-radius: 10px;
+    background-color: rgba(211, 226, 255, 0.2);
     box-shadow: 1px 1px 3px rgb(168, 168, 168);
 }
 
@@ -137,12 +155,35 @@
 
 .cat.image {
     position: absolute;
-    background-image: url('../assets/laughing.jpg');
     background-position: center;
     background-size: cover;
     height: 100%;
     width: 100%;
     transition: all 0.5s ease-out;
+}
+.cat.image.comedy {
+    background-image: url('../assets/influencers/youtube/comedy.jpg');
+}
+.cat.image.education {
+    background-image: url('../assets/influencers/youtube/education.jpg');
+}
+.cat.image.fitness {
+    background-image: url('../assets/influencers/youtube/fitness.jpg');
+}
+.cat.image.beauty {
+    background-image: url('../assets/influencers/youtube/beauty.jpg');
+}
+.cat.image.gaming {
+    background-image: url('../assets/influencers/youtube/gaming.jpg');
+}
+.cat.image.tech {
+    background-image: url('../assets/influencers/youtube/tech.jpg');
+}
+.cat.image.music {
+    background-image: url('../assets/influencers/youtube/music.jpg');
+}
+.cat.image.automobile {
+    background-image: url('../assets/influencers/youtube/automobile.jpg');
 }
 .cat.footer-heading {
     color: white;
@@ -152,6 +193,10 @@
 .cat.footer-text {
     color: white;
     display: none;
+}
+
+.slick-insta > .cat.card > .cat.image {
+    background-image: url('../assets/influencers/instagram/1.jpg');
 }
 
 .cat.card:hover > .cat.card-body > .cat.card-footer {
