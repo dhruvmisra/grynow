@@ -1,3 +1,17 @@
+//Features
+let features = document.getElementsByClassName('feature');
+
+let i = 0;
+setInterval(() => {
+  features[i].classList.remove('active');
+
+  i++;
+  i %= 3;
+  features[i].classList.add('active');
+}, 5000);
+
+
+//Testimonials
 let testimonials = document.getElementsByClassName('testimonial');
 
 for (let i = 0; i < testimonials.length; i++) {
@@ -110,9 +124,9 @@ function changeTestimonial() {
   }
 }
 
-let width;
 
 
+// Slick
 $(document).ready(function(){
   $('.slick-youtube').slick({
     infinite: false,
@@ -144,6 +158,21 @@ $(document).ready(function(){
         }
       }]
   });
+  $('.slick-tiktok').slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    speed: 300,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false
+        }
+      }]
+  });
 
 });
 
@@ -152,5 +181,8 @@ $('#pills-insta-tab').click(function() {
 });
 $('#pills-youtube-tab').click(function() {
   $('.slick-youtube').slick("refresh");
+});
+$('#pills-tiktok-tab').click(function() {
+  $('.slick-tiktok').slick("refresh");
 });
 

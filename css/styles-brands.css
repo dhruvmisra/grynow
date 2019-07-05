@@ -1,5 +1,5 @@
 .jumbotron {
-    background-image: url('../assets/brands1.jpg');
+    background-image: url('../assets/brands-jumbo.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -7,6 +7,13 @@
     width: 100%;
 }
 
+.step-btn {
+    font-size: 0.8em;
+}
+.step-btn > span {
+    font-size: 1em;
+    color: #E60031;
+}
 .steps-img {
     position: relative;
     order: 2;
@@ -34,19 +41,19 @@
     top: -10%;
 }
 .sec-img:nth-child(3) {
-    left: -10%;
-    top: 22%;
+    left: 80%;
+    top: 12%;
 }
 .sec-img:nth-child(4) {
-    left: 85%;
-    top: 40%;
+    left: -15%;
+    top: 35%;
 }
 .sec-img:nth-child(5) {
-    left: 65%;
-    top: 70%;
+    left: 72%;
+    top: 62%;
 }
 .sec-img:nth-child(6) {
-    left: -20%;
+    left: -25%;
     top: 80%;
 }
 
@@ -148,7 +155,7 @@
         order: 1;
         width: 60%;
         height: 60%;
-        margin-left: 25%;
+        margin-left: 15%;
     }
     .accordion {
         order: 2;

@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
 		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<!-- AOS -->
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="./css/aos.css" />
 	<!-- Slick -->
 	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
 	<!-- Custom CSS -->
@@ -71,7 +71,7 @@
 							>I'm a Brand</a>
 				</div>
 
-				<div class="creators-main border">
+				<div class="creators-main">
 					<!-- <img src="./assets/front.png" alt="" class="creator creator-in"> -->
 				</div>
 				<div class="creators-main-circle"></div>
@@ -82,35 +82,93 @@
 	</div>
 
 	<!-- Why choose grynow -->
-	<div class="card border-0 features bg-light">
+	<div class="card border-0 bg-light">
 		<div class="card-body">
-			<!-- <div id="tilt-art-1"></div> -->
 			<h2 class="card-title text-center" id="why-grynow" data-aos="animate-up">Why GryNow?</h2>
-			<!-- <div id="tilt-art-2"></div> -->
+
 			<div class="card col-sm-12 bg-transparent border-0">
 				<div class="card-body">
-					<div class="row">
-						<img src=""
-								alt="feature image"
-								class="feature-img col-md-12 col-lg-6"
-								data-aos="animate-right"
-								data-aos-delay="100">
-						<div class="feature-text col-md-12 col-lg-6">
-							<h4 class="feature-heading" 
-									data-aos="animate-left"
-									data-aos-delay="100"
-									data-aos-anchor=".feature-img">Target Audience</h4>
-							<p data-aos="animate-left"
-									data-aos-delay="150"
-									data-aos-anchor=".feature-img">
-									We guarantee the authenticity of the influencer and eleminate 
-									the risk of fraud by the influencer.
-								</p>
-							<button class="btn btn-secondary btn-sm rounded-pill"
-											data-aos="fade"
-											data-aos-delay="200"
-											data-aos-anchor=".feature-img">Learn More</button>
+					<div class="row features">
+
+						<div class="row w-100 feature active">
+							<div class="feature-img col-md-12 col-lg-5 ml-auto">
+								<img src="./assets/features/target-audience.jpg"
+										alt="feature image"
+										class="w-100 h-100"
+										data-aos="animate-right"
+										data-aos-delay="100">
+							</div>
+							<div class="feature-text col-md-12 col-lg-6">
+								<h4 class="feature-heading" 
+										data-aos="animate-left"
+										data-aos-delay="100"
+										data-aos-anchor=".feature-img">Target Audience</h4>
+								<p data-aos="animate-left"
+										data-aos-delay="150"
+										data-aos-anchor=".feature-img">
+										We guarantee the authenticity of the influencer and eleminate 
+										the risk of fraud by the influencer. Our data mining method 
+										prdeicts audience insights 3 months in advacnce.
+									</p>
+								<button class="btn btn-secondary btn-sm rounded-pill"
+												data-aos="fade"
+												data-aos-delay="200"
+												data-aos-anchor=".feature-img">Learn More</button>
+							</div>
 						</div>
+
+						<div class="row w-100 feature">
+							<div class="feature-img col-md-12 col-lg-5 ml-auto">
+								<img src="./assets/features/analytics.jpg"
+										alt="feature image"
+										class="w-100 h-100"
+										data-aos="animate-right"
+										data-aos-delay="100">
+							</div>
+							<div class="feature-text col-md-12 col-lg-6">
+								<h4 class="feature-heading" 
+										data-aos="animate-left"
+										data-aos-delay="100"
+										data-aos-anchor=".feature-img">Activation</h4>
+								<p data-aos="animate-left"
+										data-aos-delay="150"
+										data-aos-anchor=".feature-img">
+										Campaign Management and actions promote analytics and optimisation 
+										to improve campaign performance.
+									</p>
+								<button class="btn btn-secondary btn-sm rounded-pill"
+												data-aos="fade"
+												data-aos-delay="200"
+												data-aos-anchor=".feature-img">Learn More</button>
+							</div>
+						</div>
+
+						<div class="row w-100 feature">
+							<div class="feature-img col-md-12 col-lg-5 ml-auto">
+								<img src="./assets/features/analytics.jpg"
+										alt="feature image"
+										class="w-100 h-100"
+										data-aos="animate-right"
+										data-aos-delay="100">
+							</div>
+							<div class="feature-text col-md-12 col-lg-6">
+								<h4 class="feature-heading" 
+										data-aos="animate-left"
+										data-aos-delay="100"
+										data-aos-anchor=".feature-img">Analytics</h4>
+								<p data-aos="animate-left"
+										data-aos-delay="150"
+										data-aos-anchor=".feature-img">
+										A fine-grained report that illustrates all key highlights and 
+										insights and provides a rich future strategy.
+									</p>
+								<button class="btn btn-secondary btn-sm rounded-pill"
+												data-aos="fade"
+												data-aos-delay="200"
+												data-aos-anchor=".feature-img">Learn More</button>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -118,11 +176,7 @@
 	</div>
 
 	<!-- Case study -->
-	<!-- <div style="position: relative">
-		<div id="art-2"></div>
-	</div> -->
 	<div class="card border-0 studies bg-transparent">
-		<!-- <div id="art-1"></div> -->
 		<div class="card-body">
 			<h2 class="card-title text-center" data-aos="animate-up">Case Study</h2>
 			<div class="card col-sm-12 bg-transparent border-0" style="height: fit-content;">
@@ -363,7 +417,7 @@
 				<div class="slick-insta">
 
 					<div class="cat card border-0">
-						<div class="cat image"></div>
+						<div class="cat image insta-1"></div>
 						<div class="cat card-body">
 							<div class="cat card-footer">
 								<h6 class="cat footer-heading text-center">Comedy</h6>
@@ -373,7 +427,7 @@
 					</div>
 
 					<div class="cat card border-0">
-						<div class="cat image"></div>
+						<div class="cat image insta-2"></div>
 						<div class="cat card-body">
 							<div class="cat card-footer">
 								<h6 class="cat footer-heading text-center">Comedy</h6>
@@ -383,7 +437,7 @@
 					</div>
 
 					<div class="cat card border-0">
-						<div class="cat image"></div>
+						<div class="cat image insta-3"></div>
 						<div class="cat card-body">
 							<div class="cat card-footer">
 								<h6 class="cat footer-heading text-center">Comedy</h6>
@@ -393,7 +447,76 @@
 					</div>
 
 					<div class="cat card border-0">
-						<div class="cat image"></div>
+						<div class="cat image insta-4"></div>
+						<div class="cat card-body">
+							<div class="cat card-footer">
+								<h6 class="cat footer-heading text-center">Comedy</h6>
+								<p class="cat footer-text">Laughter is the best medicine even for your business</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="cat card border-0">
+						<div class="cat image insta-5"></div>
+						<div class="cat card-body">
+							<div class="cat card-footer">
+								<h6 class="cat footer-heading text-center">Comedy</h6>
+								<p class="cat footer-text">Laughter is the best medicine even for your business</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="cat card border-0">
+						<div class="cat image insta-6"></div>
+						<div class="cat card-body">
+							<div class="cat card-footer">
+								<h6 class="cat footer-heading text-center">Comedy</h6>
+								<p class="cat footer-text">Laughter is the best medicine even for your business</p>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+		  </div>
+
+          <!-- Tiktok section -->
+          <div class="tab-pane fade" id="pills-tiktok" role="tabpanel" aria-labelledby="pills-tiktok-tab">
+			  
+				<div class="slick-tiktok">
+
+					<div class="cat card border-0">
+						<div class="cat image tiktok-1"></div>
+						<div class="cat card-body">
+							<div class="cat card-footer">
+								<h6 class="cat footer-heading text-center">Comedy</h6>
+								<p class="cat footer-text">Laughter is the best medicine even for your business</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="cat card border-0">
+						<div class="cat image tiktok-2"></div>
+						<div class="cat card-body">
+							<div class="cat card-footer">
+								<h6 class="cat footer-heading text-center">Comedy</h6>
+								<p class="cat footer-text">Laughter is the best medicine even for your business</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="cat card border-0">
+						<div class="cat image tiktok-2"></div>
+						<div class="cat card-body">
+							<div class="cat card-footer">
+								<h6 class="cat footer-heading text-center">Comedy</h6>
+								<p class="cat footer-text">Laughter is the best medicine even for your business</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="cat card border-0">
+						<div class="cat image tiktok-2"></div>
 						<div class="cat card-body">
 							<div class="cat card-footer">
 								<h6 class="cat footer-heading text-center">Comedy</h6>
@@ -403,10 +526,9 @@
 					</div>
 
 				</div>
-		  </div>
 
-          <!-- Tiktok section -->
-          <div class="tab-pane fade" id="pills-tiktok" role="tabpanel" aria-labelledby="pills-tiktok-tab">Tiktok</div>
+		  </div>
+		  
 		</div>		
 
 

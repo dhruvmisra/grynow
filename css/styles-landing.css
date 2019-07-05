@@ -1,3 +1,9 @@
+/* Navbar */
+.navbar::before {
+    content: '';
+    height: 0;
+}
+
 /* Jumbotron */
 .jumbo-landing {
     height: 100vh;
@@ -15,33 +21,35 @@
 }
 .creators-main {
     position: absolute;
-    width: 600px;
-    height: 650px;
+    width: 35em;
+    height: 35em;
     background-image: url('../assets/creators-main1.png');
+    /* background-color: black; */
     background-size: contain;
     background-repeat: no-repeat;
     top: 6em;
-    right: -5em;
+    left: 40em;
     transform: rotate(-10deg);
     clip-path: polygon(0% 0%, 100% 0%, 100% 56.5%, 18% 100%, 0% 100%);
 }
 .creators-main::before {
     position: absolute;
     content: '';
-    width: 150px;
-    height: 150px;
+    width: 25%;
+    height: 25%;
     transform: rotate(100deg);
     top: 2em;
-    left: 25em;
+    left: 70%;
     background: url('../assets/creators-main-art.png');
     background-size: contain;
+    background-repeat: no-repeat
 }
 .creators-main-circle {
     position: relative;
-    top: 35em;
+    top: calc(80vh - 12em);
     left: 0;
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     background-color: #E60031;
 }
@@ -64,19 +72,97 @@
 }
 
 /* Features */
+.feature {
+    display: none;
+}
+.feature.active {
+    display: inherit;
+}
+.feature.active > .feature-img {
+    animation: animate-right 0.5s ease-out forwards, remove-left 0.5s ease-out 4.4s forwards;
+}
+.feature.active > .feature-text {
+    animation: animate-left 0.5s ease-out forwards, remove-right 0.5s ease-out 4.5s forwards;
+}
+
+@keyframes animate-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes animate-left {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes remove-right {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
+@keyframes remove-left {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}
+
 .features {
     border-radius: 0;
     margin-top: -10px;
 }
 
 .feature-img {
-    height: 350px;
-    border: 1px solid rgb(172, 172, 172);
+    position: relative;
+    height: fit-content;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 85%, 90% 100%, 0% 100%, 0% 15%);
 }
+/* .feature-img::before {
+    content: '';
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    z-index: 2;
+}
+.feature-img::after {
+    content: '';
+    position: absolute;
+    top: 2em;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    z-index: 2;
+} */
 
 .feature-text {
     padding: 40px;
     margin: auto 0px;
+    text-align: center;
 }
 
 /* Case study */
@@ -97,13 +183,13 @@
     box-shadow: 3px 3px 8px rgb(206, 206, 206);
 }
 .stat {
-    height: 100px; 
+    height: 100px;
     width: 100px;
 }
 
 /* fix for carousel motion glitch */
-/* .carousel .item { 
-    height: 400px; 
+/* .carousel .item {
+    height: 400px;
 } */
 
 /* Clients */
@@ -195,8 +281,30 @@
     display: none;
 }
 
-.slick-insta > .cat.card > .cat.image {
+.cat.image.insta-1 {
+    background-image: url('../assets/influencers/instagram/avneet-kaur.jpg');
+}
+.cat.image.insta-2 {
+    background-image: url('../assets/influencers/instagram/tara.jpg');
+}
+.cat.image.insta-3 {
+    background-image: url('../assets/influencers/instagram/michu.jpg');
+}
+.cat.image.insta-4 {
+    background-image: url('../assets/influencers/instagram/bhuvan-bam.jpg');
+}
+.cat.image.insta-5 {
+    background-image: url('../assets/influencers/instagram/riya-jain.jpg');
+}
+.cat.image.insta-6 {
     background-image: url('../assets/influencers/instagram/1.jpg');
+}
+
+.cat.image.tiktok-1 {
+    background-image: url('../assets/influencers/tiktok/riyaz.jpg');
+}
+.cat.image.tiktok-2 {
+    background-image: url('../assets/influencers/tiktok/faisal-shaikh.jpg');
 }
 
 .cat.card:hover > .cat.card-body > .cat.card-footer {
@@ -443,7 +551,7 @@
     z-index: -1;
 }
 
-/* 
+/*
 ##Device = Laptops, Desktops
 ##Screen = B/w 1025px to 1280px
 */
@@ -453,7 +561,7 @@
 
 }
 
-/* 
+/*
 ##Device = Tablets, Ipads (portrait)
 ##Screen = B/w 768px to 1024px
 */
@@ -466,29 +574,22 @@
     }
     .creators-main {
         order: 1;
-        position: relative;
+        width: calc(100% - 5.1em);
+        height: calc(50%);
         top: 0;
-        right: -1em;
-        margin-bottom: -1em;
-    }
-    .creators-main::before {
-        left: 20em;
+        left: 2em;
     }
     .jumbo-text {
         order: 2;
         width: 100%;
-        padding-top: 1em;
+        margin-top: 20em;
+        padding-top: 2em;
+        z-index: 2;
     }
-    
+
 
     /* Features */
-    .feature-text {
-        text-align: center;
-    }
-    /*
-    .feature-heading {
-        font-size: 1.2em;
-    } */
+
 
     /* Case Study */
     .study-img {
@@ -510,7 +611,7 @@
         width: 50px;
         height: 50px;
     }
-    
+
     /* Categories */
     .cat.card {
         width: 100%;
@@ -524,7 +625,7 @@
     .cat.footer-heading {
         font-size: 1.1em;
     }
-    
+
     /* Testimonials */
     .testimonial {
         width: 70%;
@@ -582,7 +683,7 @@
     }
 }
 
-/* 
+/*
 ##Device = Tablets, Ipads (landscape)
 ##Screen = B/w 768px to 1024px
 */
@@ -591,7 +692,7 @@
 
 } */
 
-/* 
+/*
 ##Device = Low Resolution Tablets, Mobiles (Landscape)
 ##Screen = B/w 481px to 767px
 */
@@ -600,7 +701,7 @@
 
 } */
 
-/* 
+/*
 ##Device = Most of the Smartphones Mobiles (Portrait)
 ##Screen = B/w 320px to 479px
 */
