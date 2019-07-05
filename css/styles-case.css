@@ -5,7 +5,7 @@
 
 /* Case study */
 .study-img {
-    height: 500px;
+    height: fit-content;
     width: 50%;
     filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.2));
     background: #fcfeff;
@@ -54,7 +54,7 @@
         background-position: right -10em;
     }
     .study-img {
-        height: 300px;
+        width: 100%;
         margin-left: 0;
         margin-right: 0;
     }

@@ -19,18 +19,23 @@
     margin: 0 auto;
     margin-bottom: -5em;
 }
+.creators-container {
+    position: relative;
+    height: 500px;
+    margin: auto 0;
+}
 .creators-main {
     position: absolute;
-    width: 35em;
-    height: 35em;
+    width: 100%;
+    height: 100%;
     background-image: url('../assets/creators-main1.png');
     /* background-color: black; */
     background-size: contain;
     background-repeat: no-repeat;
     top: 6em;
-    left: 40em;
+    left: 20%;
     /* transform: rotate(-10deg); */
-    clip-path: polygon(0% 0%, 100% 0%, 100% 52%, 16% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 45%, 12% 100%, 0% 100%);
 }
 .creators-main::before {
     position: absolute;
@@ -45,9 +50,9 @@
     background-repeat: no-repeat
 }
 .creators-main-circle {
-    position: relative;
-    top: calc(80vh - 12em);
-    left: 0;
+    position: absolute;
+    top: 70%;
+    left: 5%;
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -55,10 +60,10 @@
 }
 .creator {
     position: relative;
-    width: 350px;
-    height: 500px;
-    bottom: -2em;
-    left: 5em;
+    width: 60%;
+    height: fit-content;
+    bottom: -1em;
+    left: 4em;
 }
 .creator-in {
     animation: creator-in 0.8s ease-out;
@@ -286,13 +291,13 @@
 }
 
 .cat.image.insta-1 {
-    background-image: url('../assets/influencers/instagram/avneet-kaur.jpg');
+    background-image: url('../assets/influencers/instagram/somya-gupta.jpg');
 }
 .cat.image.insta-2 {
     background-image: url('../assets/influencers/instagram/tara.jpg');
 }
 .cat.image.insta-3 {
-    background-image: url('../assets/influencers/instagram/michu.jpg');
+    background-image: url('../assets/influencers/instagram/avneet-kaur.jpg');
 }
 .cat.image.insta-4 {
     background-image: url('../assets/influencers/instagram/bhuvan-bam.jpg');
@@ -576,24 +581,24 @@
     .jumbo-landing {
         height: fit-content;
     }
-    .creators-main {
+    .creators-container {
         order: 1;
-        width: 20em;
-        height: 20em;
+    }
+    .creators-main {
+        /* width: 200px;
+        height: 200px; */
         top: 0;
-        left: 2em;
+        left: 1em;
     }
     .creator {
-        position: relative;
-        width: 200px;
-        height: 300px;
-        bottom: -2em;
-        left: 5em;
+        bottom: -4em;
+        left: 6em;
     }
+
     .jumbo-text {
         order: 2;
         width: 100%;
-        margin-top: 20em;
+        /* margin-top: 10em; */
         padding-top: 2em;
         z-index: 2;
     }
@@ -604,6 +609,7 @@
 
     /* Case Study */
     .study-img {
+        width: 100%;
         margin-left: 0;
     }
     .study-text {
