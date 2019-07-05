@@ -155,7 +155,8 @@
         order: 1;
         width: 60%;
         height: 60%;
-        margin-left: 15%;
+        margin-left: 25%;
+        margin-right: 0;
     }
     .accordion {
         order: 2;
