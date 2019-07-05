@@ -29,8 +29,8 @@
     background-repeat: no-repeat;
     top: 6em;
     left: 40em;
-    transform: rotate(-10deg);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 56.5%, 18% 100%, 0% 100%);
+    /* transform: rotate(-10deg); */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 52%, 16% 100%, 0% 100%);
 }
 .creators-main::before {
     position: absolute;
@@ -55,7 +55,10 @@
 }
 .creator {
     position: relative;
-    right: 20%;
+    width: 350px;
+    height: 500px;
+    bottom: -2em;
+    left: 5em;
 }
 .creator-in {
     animation: creator-in 0.8s ease-out;
@@ -167,9 +170,10 @@
 
 /* Case study */
 .study-img {
-    height: 500px;
-    border: 1px solid rgb(172, 172, 172);
+    height: fit-content;
+    width: 50%;
     background: #fcfeff;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.2));
     border-radius: 10px;
     margin-left: 150px;
 }
@@ -180,7 +184,7 @@
     margin-left: -20px;
     border-radius: 7px;
     top: 10%;
-    box-shadow: 3px 3px 8px rgb(206, 206, 206);
+    box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.25);
 }
 .stat {
     height: 100px;
@@ -574,10 +578,17 @@
     }
     .creators-main {
         order: 1;
-        width: calc(100% - 5.1em);
-        height: calc(50%);
+        width: 20em;
+        height: 20em;
         top: 0;
         left: 2em;
+    }
+    .creator {
+        position: relative;
+        width: 200px;
+        height: 300px;
+        bottom: -2em;
+        left: 5em;
     }
     .jumbo-text {
         order: 2;
@@ -593,7 +604,6 @@
 
     /* Case Study */
     .study-img {
-        height: 300px;
         margin-left: 0;
     }
     .study-text {

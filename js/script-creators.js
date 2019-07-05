@@ -197,9 +197,9 @@ for(i=1; i<n-1; i++) {
     setImageAttributes(img, i)
     creatorsArea.appendChild(img);
 }
-for(let i=0; i < creatorsArea.children.length; i++) {
-    creatorsArea.children[i].addEventListener('click', showModal);
-}
+// for(let i=0; i < creatorsArea.children.length; i++) {
+//     creatorsArea.children[i].addEventListener('click', showModal);
+// }
 i = 0;
 
 init();
@@ -295,28 +295,28 @@ function onYouTubeIframeAPIReady() {
 }
 
 //Modal
-let modal = document.getElementById("creatorModal");
-function showModal() {
-    console.log('modal');
-    let current = event.currentTarget;
-    let id = current.getAttribute('alt');
-    let name = document.getElementById('creator-name');
-    let img = document.getElementById('creator-img');
-    let info = document.getElementById('creator-info');
-    let iframe= player.getIframe();
+// let modal = document.getElementById("creatorModal");
+// function showModal() {
+//     console.log('modal');
+//     let current = event.currentTarget;
+//     let id = current.getAttribute('alt');
+//     let name = document.getElementById('creator-name');
+//     let img = document.getElementById('creator-img');
+//     let info = document.getElementById('creator-info');
+//     let iframe= player.getIframe();
 
-    console.log(creatorsData[id]);
-    name.innerHTML = creatorsData[id].name;
-    img.src = creatorPath + creatorsData[id].img;
-    info.innerHTML = creatorsData[id].info;
-    iframe.src = 'https://www.youtube.com/embed/' + creatorsData[id].videoId + '?enablejsapi=1';
+//     console.log(creatorsData[id]);
+//     name.innerHTML = creatorsData[id].name;
+//     img.src = creatorPath + creatorsData[id].img;
+//     info.innerHTML = creatorsData[id].info;
+//     iframe.src = 'https://www.youtube.com/embed/' + creatorsData[id].videoId + '?enablejsapi=1';
     
-    modal.style.display = "block";
-}
+//     modal.style.display = "block";
+// }
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-        player.stopVideo();
-    }
-}
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//         player.stopVideo();
+//     }
+// }
