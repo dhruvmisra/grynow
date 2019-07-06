@@ -303,6 +303,7 @@
 .cat.footer-text {
     color: white;
     display: none;
+    text-align: center;
 }
 
 .cat.image.insta-1 {
@@ -398,9 +399,9 @@
 }
 
 .testimonial-image {
-    border: 1px solid rgb(201, 201, 201);
     height: 6em;
     width: 6em;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .testimonial-text {
