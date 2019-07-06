@@ -12,14 +12,14 @@
     border-radius: 10px;
     margin-left: 150px;
     margin-right: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 .study-text {
     position: absolute;
     width: 40%;
     right: 50px;
     border-radius: 7px;
-    top: 10%;
+    top: 8%;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
 }
 .stat {
