@@ -333,6 +333,9 @@
 .cat.image.tiktok-3 {
     background-image: url('../assets/influencers/tiktok/jannat.jpg');
 }
+.cat.image.tiktok-4 {
+    background-image: url('../assets/influencers/tiktok/sarfaraz.jpg');
+}
 
 .cat.card:hover > .cat.card-body > .cat.card-footer {
     height: 80%;
