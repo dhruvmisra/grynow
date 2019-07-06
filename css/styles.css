@@ -158,7 +158,7 @@ h1, h2, h4, .list-title {
 
     .navbar {
         position: relative;
-        background: black;
+        background: black !important;
     }
     .navbar-collapse {
         margin-left: 50px;

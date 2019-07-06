@@ -281,18 +281,18 @@ function setImageAttributes(img, j) {
 
 
 // Youtube Iframe API
-let tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-let firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+// let tag = document.createElement('script');
+// tag.src = "https://www.youtube.com/iframe_api";
+// let firstScriptTag = document.getElementsByTagName('script')[0];
+// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-let player;
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-        height: '360',
-        width: '640'
-    });
-}
+// let player;
+// function onYouTubeIframeAPIReady() {
+//     player = new YT.Player('player', {
+//         height: '360',
+//         width: '640'
+//     });
+// }
 
 //Modal
 // let modal = document.getElementById("creatorModal");
@@ -320,3 +320,10 @@ function onYouTubeIframeAPIReady() {
 //         player.stopVideo();
 //     }
 // }
+
+
+document.onload = () => {
+    let creatorContainer = document.getElementById('creator-container');
+    let width = creatorContainer.scrollLeft/2;
+    console.log(width);
+};

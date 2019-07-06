@@ -66,6 +66,7 @@
     margin-right: auto;
 }
 
+
 #videos {
     width: 100%;
     height: fit-content;
@@ -84,17 +85,15 @@
 }
 
 /* Creators Area */
-.creator-container {
+#creator-container {
     position: relative;
     width: 100%;
     height: fit-content;
-    padding: 5px 0;
     overflow-x: scroll;
     overflow-y: hidden;
 }
-.creator-container::-webkit-scrollbar { 
-    width: 0px;
-    background: transparent;
+#creator-container::-webkit-scrollbar { 
+    width: 0px !important;
 }
 #creators-area {
     position: relative;

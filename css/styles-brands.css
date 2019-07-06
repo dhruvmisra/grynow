@@ -127,7 +127,6 @@
 .video {
     width: 400px;
     height: 280px;
-    margin: 15px;
 }
 .video:hover {
     cursor: pointer;
