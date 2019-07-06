@@ -7,7 +7,7 @@
 .study-img {
     height: fit-content;
     width: 50%;
-    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.2));
     background: #fcfeff;
     border-radius: 10px;
     margin-left: 150px;
@@ -20,7 +20,7 @@
     right: 50px;
     border-radius: 7px;
     top: 10%;
-    box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
 }
 .stat {
     width: 100px;
