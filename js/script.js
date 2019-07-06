@@ -124,7 +124,13 @@ function changeTestimonial() {
   }
 }
 
-
+//Popover on hover
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover({
+      placement : 'bottom',
+      trigger : 'hover'
+  });
+});
 
 // Slick
 $(document).ready(function(){
