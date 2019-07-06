@@ -10,6 +10,9 @@
     padding-bottom: 100px;
 }
 
+#pills-tab {
+    text-align: center;
+}
 form {
     display: inline-block;
     width: 100%;
