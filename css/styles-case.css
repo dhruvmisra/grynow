@@ -1,6 +1,6 @@
 /* Jumbotron */
 .jumbotron {
-    background-image: url('../assets/case-studies.jpg');
+    background-image: url('../assets/jumbotron/case-studies-jumbo.jpg');
 }
 
 /* Case study */
@@ -12,6 +12,7 @@
     border-radius: 10px;
     margin-left: 150px;
     margin-right: 100px;
+    margin-bottom: 100px;
 }
 .study-text {
     position: absolute;
@@ -45,6 +46,9 @@
 .social-row {
     padding-top: 20px;
 }
+.footer {
+    margin-top: -5em;
+}
 
 @media (max-width: 1024px) {
     .navbar {
@@ -57,6 +61,7 @@
         width: 100%;
         margin-left: 0;
         margin-right: 0;
+        margin-bottom: 0;
     }
     .study-text {
         position: relative;

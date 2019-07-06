@@ -8,7 +8,7 @@
 .jumbo-landing {
     height: 100vh;
     padding: 0;
-    background-image: url('../assets/jumbo.jpg');
+    background-image: url('../assets/jumbotron/landing-jumbo.jpg');
     background-size: cover;
 }
 .jumbo-text {

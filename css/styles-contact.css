@@ -2,7 +2,7 @@
 .jumbotron {
     padding: 0;
     border-radius: 0;
-    background-image: url('../assets/contact.jpg');
+    background-image: url('../assets/jumbotron/contact-jumbo.jpg');
     background-position: bottom;
 }
 .leading {

@@ -1,5 +1,5 @@
 .jumbotron {
-    background-image: url('../assets/brands-jumbo.jpg');
+    background-image: url('../assets/jumbotron/brands-jumbo.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -123,10 +123,38 @@
     clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0 calc(100% - 5vw));
     margin-top: calc(0% - 5vw);
 }
+
 .video {
-    width: 300px;
-    height: 300px;
-    margin: 10px 0;
+    width: 400px;
+    height: 280px;
+    margin: 15px;
+}
+.video:hover {
+    cursor: pointer;
+}
+.video:hover > .thumbnail {
+    width: calc(100% - 20px);
+    height: calc(100% - 70px);
+    margin-top: 10px;
+}
+.video:hover > .info > h5 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.thumbnail {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 60px);
+    transition: all 0.1s ease-out;
+}
+h5 {
+    transition: all 0.1s ease-out;
+}
+.info {
+    padding: 15px;
+    transition: all 0.1s ease-out;
 }
 
 .slick-prev:before, .slick-next:before{
