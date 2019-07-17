@@ -1,3 +1,16 @@
+//Read more
+let read = document.getElementById('read-more');
+read.addEventListener('click', () => {
+  let content = document.getElementById('read-content');
+  if(content.style.display == 'none') {
+    content.style.display = 'block';
+    read.innerHTML = 'Read Less';
+  } else {
+    content.style.display = 'none';
+    read.innerHTML = 'Read More';
+  }
+})
+
 //Features
 let features = document.getElementsByClassName('feature');
 

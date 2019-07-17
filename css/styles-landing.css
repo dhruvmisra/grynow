@@ -4,6 +4,14 @@
     height: 0;
 }
 
+#read-content {
+    display: none;
+}
+
+.content h2 {
+    font-family: 'Raleway' !important;
+}
+
 /* Jumbotron */
 .jumbo-landing {
     height: 100vh;
@@ -12,7 +20,7 @@
     background-size: cover;
 }
 .jumbo-text {
-    padding-top: 40vh;
+    padding-top: 30vh;
 }
 #jumbo-photo {
     display: block;
@@ -64,7 +72,7 @@
     width: 60%;
     height: fit-content;
     bottom: -1em;
-    left: 4em;
+    left: 0;
 }
 .creator-in {
     animation: creator-in 0.8s ease-out;
@@ -190,7 +198,7 @@
     height: fit-content;
     width: 50%;
     background: #fcfeff;
-    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
     border-radius: 10px;
     margin-left: 150px;
 }
@@ -610,7 +618,7 @@
         /* width: 200px;
         height: 200px; */
         top: 0;
-        left: 1em;
+        left: 0;
     }
     .creator {
         bottom: -4em;
@@ -638,7 +646,7 @@
         position: relative;
         width: 100%;
         margin-left: 0;
-        margin-top: -30px;
+        margin-top: 0;
         right: 0;
         padding: 20px;
     }

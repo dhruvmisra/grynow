@@ -7,7 +7,7 @@
 .study-img {
     height: fit-content;
     width: 50%;
-    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
     background: #fcfeff;
     border-radius: 10px;
     margin-left: 150px;
@@ -67,7 +67,7 @@
         position: relative;
         width: 100%;
         margin-left: 0;
-        margin-top: -30px;
+        margin-top: 0;
         right: 0;
         padding: 20px;
     }
