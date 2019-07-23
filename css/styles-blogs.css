@@ -1,6 +1,18 @@
+.jumbotron {
+    background-image: url('../assets/jumbotron/blogs.jpg');
+}
+
+.blog-link {
+    text-decoration: none;
+    color: black;
+}
+.blog-link:hover {
+    text-decoration: none;
+}
+
 .blog {
     position: relative;
-    width: 384px;
+    min-width: 384px;
     height: fit-content;
     margin: 20px;
     border-radius: 0;
@@ -10,20 +22,49 @@
 .blog::before, .blog::after {
     content: '';
     position: absolute;
+    left: 0;
     width: 100%;
     height: 3px;
     background-color: red;
+    transition: top 0.2s ease-out, bottom 0.2s ease-out;
 }
 .blog::before {
-    top: -10px;
+    top: -15px;
 }
 .blog::after {
-    bottom: -10px;
+    bottom: -15px;
 }
-.blog:hover > .blog
+.blog .card-title {
+    transition: color 0.2s ease-out;
+}
 
-.card-img-top {
+.blog:hover {
+    cursor: pointer;
+}
+.blog:hover::before {
+    top: 0;
+}
+.blog:hover::after {
+    bottom: 0;
+}
+
+.blog:hover .card-title {
+    color: rgb(43, 0, 197);
+}
+
+
+.blog-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 216px;
     width: 100%;
     background-color: rgb(238, 238, 255);
+    overflow: hidden;
+}
+
+.blog-image img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
 }

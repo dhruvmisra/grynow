@@ -1,0 +1,49 @@
+.navbar::before {
+    box-shadow: 0 0 0 white;
+}
+h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.author {
+    display: block;
+    text-align: right;
+}
+.blog {
+    padding-top: 10em;
+}
+.blog-image {
+    width: 100%;
+    height: fit-content;
+    margin: 30px auto;
+}
+.blog-content {
+    order: 1;
+    font-size: 1.2em;
+    margin: 10px 0;
+    margin-left: auto;
+}
+.sticky-container {
+    position: relative;
+    order: 2;
+}
+#share-blog {
+    position: sticky;
+
+    top: 2em;
+    margin: 2em 0;
+    padding: 1em 0;
+}
+#share-blog img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+.social-row {
+    padding-top: 20px;
+}
