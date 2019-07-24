@@ -28,13 +28,15 @@ h3 {
     margin: 10px 0;
     margin-left: auto;
 }
+.blog .container {
+    transform: translateX(50px);
+}
 .sticky-container {
     position: relative;
     order: 2;
 }
 #share-blog {
     position: sticky;
-
     top: 2em;
     margin: 2em 0;
     padding: 1em 0;
