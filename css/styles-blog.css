@@ -49,3 +49,9 @@ h3 {
 .social-row {
     padding-top: 20px;
 }
+
+@media (max-width: 1024px) {
+    .blog .container {
+        transform: translateX(0);
+    }
+}
