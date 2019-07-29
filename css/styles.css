@@ -173,6 +173,9 @@ h1, h2, h4, .list-title {
         padding: 20px;
         width: 100%;
     }
+    .display-4 {
+        font-size: 2em ;
+    }
 
     .card-title {
         margin: 10px 0px;

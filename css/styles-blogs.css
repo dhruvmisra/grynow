@@ -69,3 +69,9 @@
     min-width: 100%;
     min-height: 100%;
 }
+
+@media (max-width: 1024px) {
+    .blog {
+        min-width: 0;
+    }
+}
