@@ -4,6 +4,16 @@
     background-position: center;
 }
 
+#read-content {
+    display: none;
+}
+.content h2 {
+    font-family: 'Raleway' !important;
+}
+.content h3 {
+    font-size: 1.4em;
+}
+
 .focus {
     width: 100%;
     /* border: 1px solid black; */
@@ -346,5 +356,17 @@
     }
     100% {
         transform: scale(1);
+    }
+}
+
+@media (max-width: 1024px) {
+    .content h1 {
+        font-size: 1.8em;
+    }
+    .content h2 {
+        font-size: 1.4em;
+    }
+    .content h3 {
+        font-size: 1.2em;
     }
 }

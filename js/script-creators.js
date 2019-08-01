@@ -274,56 +274,29 @@ function setImageAttributes(img, j) {
 }
 
 
-// let creatorsSec = document.getElementsByClassName('creator-secondary');
-// for(let i=0; i < creatorsSec.length; i++) {
-//     creatorsSec[i].addEventListener('click', showModal);
-// }
+//Read more
+let read = document.getElementById('read-more');
+let content = document.getElementById('read-content');
+content.style.display = 'none';
+read.addEventListener('click', () => {
+  console.log('clicked');
+  if(content.style.display == 'none') {
+    console.log('if');
+    content.style.display = 'block';
+    read.innerHTML = 'Read Less';
+  } else {
+    console.log('else');
+    content.style.display = 'none';
+    read.innerHTML = 'Read More';
+  }
+});
 
 
-// Youtube Iframe API
-// let tag = document.createElement('script');
-// tag.src = "https://www.youtube.com/iframe_api";
-// let firstScriptTag = document.getElementsByTagName('script')[0];
-// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-// let player;
-// function onYouTubeIframeAPIReady() {
-//     player = new YT.Player('player', {
-//         height: '360',
-//         width: '640'
-//     });
-// }
-
-//Modal
-// let modal = document.getElementById("creatorModal");
-// function showModal() {
-//     console.log('modal');
-//     let current = event.currentTarget;
-//     let id = current.getAttribute('alt');
-//     let name = document.getElementById('creator-name');
-//     let img = document.getElementById('creator-img');
-//     let info = document.getElementById('creator-info');
-//     let iframe= player.getIframe();
-
-//     console.log(creatorsData[id]);
-//     name.innerHTML = creatorsData[id].name;
-//     img.src = creatorPath + creatorsData[id].img;
-//     info.innerHTML = creatorsData[id].info;
-//     iframe.src = 'https://www.youtube.com/embed/' + creatorsData[id].videoId + '?enablejsapi=1';
-    
-//     modal.style.display = "block";
-// }
-
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//         player.stopVideo();
-//     }
-// }
-
-
-document.onload = () => {
+window.onload = () => {
     let creatorContainer = document.getElementById('creator-container');
-    let width = creatorContainer.scrollLeft/2;
-    console.log(width);
+
+    creatorContainer.scrollLeft = 1000000
+    let maxScroll = creatorContainer.scrollLeft;
+    creatorContainer.scrollLeft = maxScroll/2.4;
+    console.log(maxScroll);
 };

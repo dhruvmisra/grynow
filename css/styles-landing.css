@@ -633,6 +633,16 @@
         z-index: 2;
     }
 
+    .content h1 {
+        font-size: 1.8em;
+    }
+    .content h2 {
+        font-size: 1.4em;
+    }
+    .content h3 {
+        font-size: 1.2em;
+    }
+
 
     /* Features */
 
