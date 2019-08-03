@@ -297,6 +297,5 @@ window.onload = () => {
 
     creatorContainer.scrollLeft = 1000000
     let maxScroll = creatorContainer.scrollLeft;
-    creatorContainer.scrollLeft = maxScroll/2.4;
-    console.log(maxScroll);
+    creatorContainer.scrollLeft = maxScroll/2.1;
 };
