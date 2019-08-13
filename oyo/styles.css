@@ -7,26 +7,22 @@
   background-size: cover;
   background-position: bottom;
 }
-.oyo-logo {
-  width: 100%;
+.branding {
+  width: 100px;
   height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  z-index: 2;
 }
-.oyo-logo img {
+.branding img {
+  filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.45));
+}
+.oyo-logo {
   filter: grayscale(0.2);
 }
-.prop {
-  position: absolute;
-}
-
-.prop:nth-child(2) {
-  left: 0;
-  bottom: 0;
-}
-.prop:nth-child(3) {
-  left: 120px;
-  bottom: -30px;
-}
-
 
 .video {
   position: relative;
